@@ -103,11 +103,7 @@ body {
     background-color: white;
     border: none;
     margin: 0;
-    position: absolute;
-    top: 2%;
-    bottom: 2%;
-    left: 1%;
-    right: 1%;
+    transform: scale(.95);
 }
 
 .easter_egg:hover~.main_blockshowing .content_blockshowing mark {
@@ -354,7 +350,6 @@ footer ul {
 /* Same structure than last one, I only changed the style in order to show how boxmodel works
     I add padding, border and margin to content_blockshowing class*/
 .main_blockshowing {
-    height: 70vh;
     border: 1px solid black;
     background-color: black;
     margin-top: 10px;
