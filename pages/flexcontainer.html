@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flex Container</title>
+        <link rel="stylesheet" href="../css/styles.css" />
+    </head>
+    <body style="padding: 10px">
+        <span class="easter_egg"></span>
+        <!--I used nav tag for semantic syntax, inside the nav element there are div elements only for organizing-->
+        <!--Inside each div there are ul elements to create the menu-->
+        <nav>
+            <div>
+                <ul class="side-logo">
+                    <li>
+                        <a href="../index.html">
+                            <button id="logo_button" class="tooltip">
+                                <span class="tooltiptext">Block</span>
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="side-menu">
+                    <li>
+                        <a href="blockshowingcase.html"
+                            ><button class="button tooltip">
+                                Introduction
+                                <span class="tooltiptext"
+                                    >Block Showing Case</span
+                                >
+                            </button></a
+                        >
+                    </li>
+                    <li>
+                        <a href="flexcontainer.html"
+                            ><button class="button tooltip">
+                                Gallery
+                                <span class="tooltiptext">Flexbox</span>
+                            </button></a
+                        >
+                    </li>
+                    <li>
+                        <a href="floatleft.html"
+                            ><button class="button tooltip">
+                                Taco
+                                <span class="tooltiptext">Float left</span>
+                            </button></a
+                        >
+                    </li>
+                    <li>
+                        <a href="floatright.html"
+                            ><button class="button tooltip">
+                                Chichen Itza
+                                <span class="tooltiptext">Float right</span>
+                            </button></a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--I made 3 containers main_flex is larger and inside this I have 2 section-->
+        <!--Each section is a flexbox, the first with direction column and the second with direction row and wrap-->
+        <main class="main_flex">
+            <section class="items_flex">
+                <span>Gallery</span>
+                <span>Link1</span>
+                <span>Link2</span>
+                <span>Link3</span>
+                <span>Link4</span>
+            </section>
+            <section class="content_flex">
+                <span class="content_picture1"></span>
+                <span class="content_picture2"></span>
+                <span class="content_picture3"></span>
+                <span class="content_picture4"></span>
+                <span class="content_picture5"></span>
+                <span class="content_picture6"></span>
+                <span class="content_picture7"></span>
+            </section>
+        </main>
+        <!--Footer is flexbox with only one ul element inside-->
+        <!--ul element is flexbox too, and inside it there are li elements positioned with justify-content: center-->
+        <footer>
+            <ul>
+                <li>
+                    <a href="#"><button class="button">Link1</button></a>
+                </li>
+                <li>
+                    <a href="#"><button class="button">Link2</button></a>
+                </li>
+                <li>
+                    <a href="#"><button class="button">Link3</button></a>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>

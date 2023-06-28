@@ -1,0 +1,447 @@
+/* I use tag body for remove default style and add default font size*/
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: larger;
+}
+
+/* This tooltip is to show where the links go*/
+.tooltip {
+    position: relative;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #0F2940;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    position: absolute;
+    left: -50%;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/* I used this class to hide or show elements when you put the pointer over the left side of screen*/
+.element_showed:nth-child(even) {
+    display: none;
+}
+
+/* I created this class to change the design when the pointer is over the left side of screen*/
+.easter_egg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10px;
+    height: 100%;
+}
+
+.easter_egg:hover~nav {
+    border: none;
+    background-color: #0F2940;
+    border-radius: 0 100px 0 50px;
+}
+
+.easter_egg:hover~nav #logo_button {
+    background-image: url('../img/logoz.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+}
+
+.easter_egg:hover~nav .button {
+    background-color: transparent;
+    border: none;
+    border-left: #ED6C4E 4px solid;
+    color: white;
+}
+
+.easter_egg:hover~footer {
+    border: none;
+    background-color: #0F2940;
+    border-radius: 0 20px 0 20px;
+}
+
+.easter_egg:hover~footer .button {
+    background-color: transparent;
+    border: none;
+    border-left: #ED6C4E 4px solid;
+    color: white;
+}
+
+.easter_egg:hover~main .element_showed:nth-child(even) {
+    display: block;
+}
+
+.easter_egg:hover~main .element_showed:nth-child(odd) {
+    display: none;
+}
+
+.easter_egg:hover~.main_block .title_block,
+.easter_egg:hover~.main_block .content_block {
+    border: none;
+}
+
+.easter_egg:hover~.main_block {
+    border-radius: 10px;
+}
+
+.easter_egg:hover~.main_blockshowing {
+    background-color: #225B8C;
+    border: none;
+    border-radius: 100px;
+    position: relative;
+}
+
+.easter_egg:hover~.main_blockshowing .content_blockshowing {
+    background-color: white;
+    border: none;
+    margin: 0;
+    position: absolute;
+    top: 2%;
+    bottom: 2%;
+    left: 1%;
+    right: 1%;
+}
+
+.easter_egg:hover~.main_blockshowing .content_blockshowing mark {
+    background-color: transparent;
+    font-weight: 500;
+}
+
+.easter_egg:hover~.main_flex {
+    border: none;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.easter_egg:hover~.main_flex .items_flex {
+    border: none;
+    border-radius: 10px;
+    background-color: #184266;
+}
+
+.easter_egg:hover~.main_flex .content_flex {
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.easter_egg:hover~.main_flex .items_flex span {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: #ED6C4E 4px solid;
+}
+
+.easter_egg:hover~.main_flex .content_flex span {
+    border-radius: 10px;
+}
+
+.easter_egg:hover~.main_flex .content_picture1 {
+    background-image: url('../img/bernal.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.easter_egg:hover~.main_flex .content_picture2 {
+    background-image: url('../img/cenote.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.easter_egg:hover~.main_flex .content_picture3 {
+    background-image: url('../img/chiapas.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.easter_egg:hover~.main_flex .content_picture4 {
+    background-image: url('../img/cholula.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.easter_egg:hover~.main_flex .content_picture5 {
+    background-image: url('../img/mariposa.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.easter_egg:hover~.main_flex .content_picture6 {
+    background-image: url('../img/janitzio.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.easter_egg:hover~.main_flex .content_picture7 {
+    background-image: url('../img/huasteca.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.easter_egg:hover~.main_float .item {
+    width: 250px;
+}
+
+.easter_egg:hover~.main_float .right {
+    background-image: url('../img/chichenitza.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 10px;
+}
+
+.easter_egg:hover~.main_float .left {
+    background-image: url('../img/tacos.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 10px;
+}
+
+.easter_egg:hover~.main_float .content_float .title_float {
+    display: block;
+}
+
+.easter_egg:hover~.main_float .content_float {
+    border: none;
+}
+
+.easter_egg:hover~.main_float {
+    border-radius: 10px;
+}
+
+/* ---------------------------------------------------- Style for Navbar ---------------*/
+/* The Navbar is a flexbox and inside 2 div
+    Each div have an element ul with elements li to make the menu.
+    I use the same Navbar in all pages
+*/
+nav {
+    display: flex;
+    border: solid 1px rgb(38, 172, 56);
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(213, 232, 212);
+    height: 14vh;
+}
+
+nav>div {
+    flex: 1 1 50px;
+    padding: 2%;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-position: inside;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#logo_button {
+    width: 70px;
+    height: 70px;
+    background-color: rgb(218, 232, 252);
+    border: 1px solid blue;
+}
+
+.side-logo {
+    justify-content: flex-start;
+}
+
+.side-menu {
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+/*I use the same class for all pages even for footer*/
+.button {
+    width: 90px;
+    height: 30px;
+    background-color: rgb(218, 232, 252);
+    border: 1px solid blue;
+    color: transparent;
+}
+
+/* ---------------------------------------------------- Style for Footer ---------------*/
+/* The footer is a flexbox with just one element ul
+    I use the same footer in all pages*/
+footer {
+    border: solid 1px rgb(38, 172, 56);
+    background-color: rgb(213, 232, 212);
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    list-style-position: inside;
+    gap: 10px;
+}
+
+/* ---------------------------------------------------- Style for Main Block ---------------*/
+/* Two block elements inside of another block element
+    h2 and p are elements inside of the second block element*/
+.main_block {
+    min-height: 65vh;
+    background-color: rgb(245, 245, 245);
+    border: 1px solid black;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.title_block {
+    border: 1px solid black;
+    height: 30%;
+    text-align: center;
+}
+
+.content_block {
+    margin-top: 10px;
+    border: 1px solid black;
+    min-height: 90%;
+    text-align: center;
+}
+
+.content_block>h2 {
+    font-weight: 100;
+}
+
+.content_block>p {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+/* ---------------------------------------------------- Style for Main Block ---------------*/
+/* Same structure than last one, I only changed the style in order to show how boxmodel works
+    I add padding, border and margin to content_blockshowing class*/
+.main_blockshowing {
+    height: 70vh;
+    border: 1px solid black;
+    background-color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.content_blockshowing {
+    border: 10px solid rgb(58, 55, 55);
+    background-color: gray;
+    padding: 50px;
+    margin: 50px;
+    text-align: justify;
+}
+
+mark {
+    background-color: rgb(253, 242, 208)
+}
+
+/* ---------------------------------------------------- Style for Main Flex ---------------*/
+/* The first container is flexbox and inside this there are 2 elements which are also flexbox
+    The first of the is flexbox with direction colum and the second one direction row*/
+.main_flex {
+    display: flex;
+    border: solid 1px rgb(38, 172, 56);
+    background-color: rgb(213, 232, 212);
+    min-height: 65vh;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.items_flex {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px rgb(38, 172, 56);
+    background-color: rgb(213, 232, 212);
+    flex: 0 1 200px;
+    align-items: center;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.items_flex span {
+    width: 80px;
+    height: 30px;
+    background-color: rgb(218, 232, 252);
+    border: 1px solid blue;
+    color: transparent;
+}
+
+.content_flex {
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 1px rgb(38, 172, 56);
+    background-color: rgb(213, 232, 212);
+    flex: 1 1 300px;
+    padding: 50px;
+    gap: 40px;
+}
+
+.content_flex span {
+    flex: 0 1 200px;
+    aspect-ratio: 1/1;
+    background-color: rgb(218, 232, 252);
+    border: 1px solid blue;
+}
+
+/* ---------------------------------------------------- Style for Main Float Left and Right ---------------*/
+/* For these 2 pages I used the same layout, only change the position of the float element
+    with left and right classes*/
+.main_float {
+    min-height: 65vh;
+    background-color: rgb(245, 245, 245);
+    border: 1px solid black;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.content_float {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.item {
+    width: 150px;
+    aspect-ratio: 1/1;
+    border: 1px solid rgb(248, 188, 123);
+    background-color: rgb(255, 230, 204);
+}
+
+.left {
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.right {
+    float: right;
+    margin: 0 0 20px 20px;
+}
+
+.title_float {
+    text-align: center;
+    display: none;
+}

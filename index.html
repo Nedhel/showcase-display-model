@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Block</title>
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body style="padding: 10px">
+        <span class="easter_egg"></span>
+        <!--I used nav tag for semantic syntax, inside the nav element there are div elements only for organizing-->
+        <!--Inside each div there are ul elements to create the menu-->
+        <nav>
+            <div>
+                <ul class="side-logo">
+                    <li>
+                        <a href="index.html">
+                            <button id="logo_button" class="tooltip">
+                                <span class="tooltiptext">Block</span>
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="side-menu">
+                    <li>
+                        <a href="./pages/blockshowingcase.html"
+                            ><button class="button tooltip">
+                                Introduction
+                                <span class="tooltiptext"
+                                    >Block Showing Case</span
+                                >
+                            </button></a
+                        >
+                    </li>
+                    <li>
+                        <a href="./pages/flexcontainer.html"
+                            ><button class="button tooltip">
+                                Gallery
+                                <span class="tooltiptext">Flexbox</span>
+                            </button></a
+                        >
+                    </li>
+                    <li>
+                        <a href="./pages/floatleft.html"
+                            ><button class="button tooltip">
+                                Taco
+                                <span class="tooltiptext">Float left</span>
+                            </button></a
+                        >
+                    </li>
+                    <li>
+                        <a href="./pages/floatright.html"
+                            ><button class="button tooltip">
+                                Chichen Itza
+                                <span class="tooltiptext">Float right</span>
+                            </button></a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--Here the main_block is a block element and inside I have 2 sections which are block elements as well-->
+        <!--I only set the height in each section because width is 100% be default in block elements-->
+        <main class="main_block">
+            <section class="title_block">
+                <!--I used 2 elements of each element because only with css I can't change the content, so I needed one way to show one of them and hide another-->
+                <h1 class="element_showed">Content</h1>
+                <h1 class="element_showed">Mexico</h1>
+            </section>
+            <section class="content_block">
+                <h2 class="element_showed">Content</h2>
+                <h2 class="element_showed">About</h2>
+                <p class="element_showed">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Eget augue est conubia sociosqu mi duis praesent
+                    mattis feugiat nibh conubia per. Sed posuere egestas tortor
+                    ultricies interdum ad ornare risus nec. Integer risus nullam
+                    mollis elit phasellus hac lobortis adipiscing sapien a
+                    conubia nostra primis. Nisi nam metus congue hendrerit ex.
+                    Ultrices suspendisse curabitur nam torquent urna eu
+                    condimentum bibendum nam. Cras nec augue litora donec
+                    aliquam. Interdum nulla aliquam habitant adipiscing laoreet
+                    blandit pulvinar. Dapibus faucibus nec eu faucibus mollis
+                    egestas maximus. Nostra ornare adipiscing lacus ullamcorper
+                    ex interdum egestas cursus ultrices luctus cubilia nam. Id
+                    pulvinar netus sed curae primis eget id et venenatis taciti
+                    dignissim primis magna. Odio tincidunt aptent est euismod
+                    nunc aptent vulputate. Lorem proin turpis lorem molestie
+                    porta mi per. Mi integer pulvinar vel torquent pellentesque
+                    maximus rhoncus rhoncus felis rutrum. Porta potenti neque
+                    dui leo pharetra augue erat habitasse morbi cras nulla
+                    cubilia lorem phasellus. Sociosqu felis libero in nec platea
+                    varius. Eu quis dignissim blandit himenaeos libero arcu
+                    vivamus ipsum. Leo cras senectus massa eleifend tristique
+                    elementum blandit etiam torquent. Nulla eu sollicitudin diam
+                    odio blandit aliquam iaculis venenatis venenatis maecenas et
+                    condimentum nec pretium. Feugiat at nam per turpis tortor.
+                    Molestie praesent consectetur turpis consequat torquent.
+                    Orci purus maximus dictum in ex tempor vitae tincidunt eget
+                    leo neque. Eleifend amet elementum dapibus platea adipiscing
+                    pulvinar odio habitant nulla scelerisque commodo hendrerit.
+                    Phasellus euismod orci a suspendisse ligula dolor. Massa
+                    gravida senectus conubia tempus praesent purus augue.
+                    Placerat ad venenatis integer etiam nisl facilisis hendrerit
+                    malesuada egestas cursus luctus aliquam vehicula ad maximus.
+                </p>
+
+                <p class="element_showed">
+                    This is the final assignment in our first course and, I
+                    would like to talk a little bit about Mexico the country
+                    where I am from. <br />There are four pages, on the first
+                    one you can read about the location, weather, biodiversity,
+                    and territory.<br />On the second page, there is a little
+                    gallery that shows seven pictures, in order from left to
+                    right, Bernal Qro, Cenote en Quintana Roo, Waterfall in
+                    Chiapas, Pyramid in Cholula Puebla, Monarch butterfly in
+                    Michoacan, Janitzio iland also in Michoacan, and the last
+                    one a River in San Luis Potosi.<br />On the third page, I
+                    show you the most typical dish in Mexico which is Tacos, and
+                    a brief story about them.<br />And on the fourth page, I
+                    tell you about Chichen Itza one of the seven wonders of the
+                    world located in Yucatan Mexico.
+                </p>
+            </section>
+        </main>
+        <!--Footer is flexbox with only one ul element inside-->
+        <!--ul element is flexbox too, and inside it there are li elements positioned with justify-content: center-->
+        <footer>
+            <ul>
+                <li>
+                    <a href="#"><button class="button">Link1</button></a>
+                </li>
+                <li>
+                    <a href="#"><button class="button">Link2</button></a>
+                </li>
+                <li>
+                    <a href="#"><button class="button">Link3</button></a>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>
